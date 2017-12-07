@@ -37,3 +37,9 @@ app.use('/api', router);
 
 app.listen(port);
 console.log("The magic happens on port " + port);
+
+// connecting to Mongoose:
+
+var mongoose = require('mongoose');
+
+mongoose.connect("mongo "mongodb+srv://cluster0-dvkqf.mongodb.net/test" --authenticationDatabase admin --username admin --password notPassword4")
