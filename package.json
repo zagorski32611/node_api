@@ -1,9 +1,25 @@
 {
-    "name": "node-api",
-    "main": "server.js",
-    "dependencies": {
-        "body-parser": "~1.0.1",
-        "express": "~4.0.0",
-        "mongoose": "^3.6.20"
-    }
+  "name": "bears",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "mongoose": "^3.6.20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "0.0.1",
+  "description": "Node.js API Tutorial",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zagorski32611/node_api.git"
+  },
+  "author": "August von Hackenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zagorski32611/node_api/issues"
+  },
+  "homepage": "https://github.com/zagorski32611/node_api#readme"
 }
