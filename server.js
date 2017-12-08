@@ -52,8 +52,6 @@ console.log("The magic happens on port " + port);
 
 // connecting to Mongoose:
 
-var mongoose = require('mongoose');
-
-mongoose.connect("mongo "mongodb+srv://cluster0-dvkqf.mongodb.net/test" --authenticationDatabase admin --username admin --password notPassword4")
-
-var Bear = require('./app/models/bear');
+var mongoose   = require('mongoose');
+mongoose.connect('mongodb://ds133776.mlab.com:33776/bears_api');
+var Bear     = require('./app/models/bear');
