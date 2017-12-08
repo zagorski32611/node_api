@@ -5,7 +5,7 @@
         "body-parser": "~1.0.1",
         "express": "~4.0.0",
         "kerberos": "0.0.23",
-        "mongodb": "^3.0.0-rc0",
+        "mongodb": "3.0.0-rc0",
         "mongoose": "~4.2.6"
     }
 }

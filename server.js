@@ -34,11 +34,27 @@ router.use(function(req, res, next){
 router.get('/', function(req, res){
   res.json({message: "Welcome to our API"});
 });
-// test router
 
+// ROUTES FOR OUR API
+//____________________________________________________________
 
+router.route('/bears')
 
-// more routes will go here
+    // create a bear (accessed at POST http://localhost:8080/api/bears)
+
+    .post(function(req, res) {
+
+      var bear = new Bear();
+      bear.name = req.body.name;
+
+      //save bear and check for errors
+      bear.save(function(err) {
+        if (err)
+            res.send(err);
+
+        res.json({ message: "Bear created!"});
+      });
+    });
 
 // Register our Routes
 
